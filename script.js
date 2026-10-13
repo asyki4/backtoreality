@@ -60,7 +60,7 @@ const letters = {
     body: [
       "Happy birthday, Talitha! Semoga di umur yang baru ini, banyak hal baik yang datang ke hidup lu.",
       "Semoga lu selalu sehat, dikelilingi orang-orang yang tulus, dan pelan-pelan bisa mencapai hal-hal yang selama ini lu pengenin. Kalo lagi capek, semoga lu selalu punya waktu buat istirahat dan hal sederhana yang bisa bikin lu seneng lagi.",
-      "Makasih udah jadi bagian dari cerita dan kenangan yang kita punya. Semoga tahun ini jadi tahun yang baik buat lu, dengan banyak pengalaman baru dan alasan buat tersenyum. Enjoy your special day, Talitha! 🩷"
+      "Makasih udah jadi bagian dari cerita dan kenangan yang kita punya. Semoga tahun ini jadi tahun yang baik buat lu, dengan banyak pengalaman baru dan alasan buat tersenyum. Enjoy your special day, Talitha!"
     ],
     signature: "— Manusia"
   },
