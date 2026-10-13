@@ -67,8 +67,8 @@ const letters = {
   hassa: {
     title: "A little note from Hassa",
     body: [
-      "Happy birthday, Talitha! Semoga panjang umur, sehat selalu, dan semua urusan lu dipermudah.",
-      "happy birthday talitt! wish you all the best, sehat selalu, be happy everytime everywhere yaa, hope your special day is filled with happiness, laughter, and lots of love.",
+      "happy birthday talitt!",
+      "wish you all the best, sehat selalu, be happy everytime everywhere yaa, hope your special day is filled with happiness, laughter, and lots of love.",
       "have a greatest birthday!💘"
     ],
     signature: "— Hassa ♡"
