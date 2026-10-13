@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#dcecff">
+  <meta name="description" content="A little birthday surprise made with love for Talitha.">
+  <title>A Little Surprise for Talitha ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="birthdayMusic" src="assets/music/birthday-song.mp3" loop preload="none"></audio>
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="Putar atau jeda musik" hidden>
+    <span id="musicIcon">♫</span><span id="musicLabel">Play music</span>
+  </button>
+
+  <main>
+    <section class="screen hero" id="home">
+      <div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">✧</div>
+      <div class="hero-card">
+        <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+        <div class="hero-heart" aria-hidden="true">♡</div>
+        <p class="small-line">made just for</p>
+        <h1>Talitha<span>!</span></h1>
+        <p class="hero-copy">A little reminder that you are loved, appreciated, and celebrated.</p>
+        <button class="primary-button" id="openSurprise" type="button">Open your surprise <span>♡</span></button>
+        <p class="tiny-note">best viewed with a little music and a happy heart</p>
+      </div>
+      <div class="bottom-doodle" aria-hidden="true">♡　✦　☁　✧　♡</div>
+    </section>
+
+    <section class="screen memories section-hidden" id="memories">
+      <div class="section-heading">
+        <p class="eyebrow">CHAPTER 01</p>
+        <h2>Our little memories</h2>
+        <p>Some moments are simple, but they stay with us.</p>
+      </div>
+      <div class="photo-grid">
+        <figure class="polaroid tilt-left">
+          <img src="assets/images/talitha.jpeg" alt="Foto Talitha" onerror="this.classList.add('missing-photo')">
+          <figcaption>a little sunshine ☀</figcaption>
+        </figure>
+        <figure class="polaroid tilt-right">
+          <img src="assets/images/memories-1.jpeg" alt="Foto kenangan bersama" onerror="this.classList.add('missing-photo')">
+          <figcaption>one for the memories ♡</figcaption>
+        </figure>
+        <figure class="polaroid tilt-left second-row">
+          <img src="assets/images/memories-2.jpeg" alt="Foto bersama teman-teman" onerror="this.classList.add('missing-photo')">
+          <figcaption>good people, good times</figcaption>
+        </figure>
+      </div>
+      <button class="primary-button" data-go="letters" type="button">There are letters for you <span>→</span></button>
+    </section>
+
+    <section class="screen letters section-hidden" id="letters">
+      <div class="section-heading">
+        <p class="eyebrow">CHAPTER 02</p>
+        <h2>Letters for you</h2>
+        <p>Three people, three little notes. Open them one by one.</p>
+      </div>
+      <div class="letter-grid">
+        <button class="letter-card blue" type="button" data-letter="lr" aria-controls="letterContent">
+          <span class="envelope">✉</span><span class="letter-from">a note from</span><strong>Manusia Setengah Salmon</strong><span class="tap-note">tap to open ↗</span>
+        </button>
+        <button class="letter-card pink" type="button" data-letter="hassa" aria-controls="letterContent">
+          <span class="envelope">✉</span><span class="letter-from">a note from</span><strong>Hassa</strong><span class="tap-note">tap to open ↗</span>
+        </button>
+        <button class="letter-card lilac" type="button" data-letter="bunga" aria-controls="letterContent">
+          <span class="envelope">✉</span><span class="letter-from">a note from</span><strong>Bunga</strong><span class="tap-note">tap to open ↗</span>
+        </button>
+      </div>
+
+      <article class="letter-content" id="letterContent" aria-live="polite" hidden>
+        <div class="letter-paper">
+          <p class="eyebrow" id="letterEyebrow">A LETTER FOR YOU</p>
+          <h3 id="letterTitle">From Manusia Setengah Salmon, with respect</h3>
+          <div id="letterBody" class="letter-body"></div>
+          <p class="signature" id="letterSignature">— Respect</p>
+          <button class="text-button" id="closeLetter" type="button">Close letter ×</button>
+        </div>
+      </article>
+
+      <p class="letters-progress" id="lettersProgress">0 of 3 letters opened</p>
+      <button class="primary-button" id="secretButton" type="button" hidden>One more little thing <span>♡</span></button>
+    </section>
+
+    <section class="screen secret section-hidden" id="secret">
+      <div class="secret-card">
+        <p class="eyebrow">JUST BETWEEN US</p>
+        <div class="secret-icon">♡</div>
+        <h2>A little note for Hassa &amp; Bunga</h2>
+        <p class="secret-intro">Ini bukan ucapan ulang tahun. Ini pesan kecil dari LR buat kalian berdua, karena gua juga pengin kalian tahu kalau gua menghargai pertemanan ini.</p>
+
+        <article class="personal-note">
+          <p class="eyebrow">FOR HASSA</p>
+          <h3>Buat Hassa ♡</h3>
+          <p>Sa, sehat-sehat ya lu. Semoga apa pun yang lagi lu jalanin sekarang bisa dimudahin satu per satu. Kalo lagi capek atau ada apa-apa, jangan ngerasa harus ngadepin semuanya sendirian. Kalo butuh bantuan atau cuma pengin cerita, bilang aja ke gua.</p>
+          <p>Makasih juga udah sering yapping. Semoga kita tetap bisa saling support, saling ngingetin kalo ada yang kelewat, dan tetap jadi teman yang bisa diandelin. Semangat terus, Sa. Jaga kesehatan, jangan lupa istirahat juga.</p>
+          <p class="signature">— Respect</p>
+        </article>
+
+        <article class="personal-note">
+          <p class="eyebrow">FOR BUNGA</p>
+          <h3>Buat Bunga ♡</h3>
+          <p>Bung, sehat-sehat terus ya. Semoga urusan lu, rencana lu, dan hal-hal yang lagi lu usahain bisa berjalan dengan baik. Kalo suatu saat lu lagi butuh bantuan atau pengin cerita, jangan sungkan bilang ke gua. Nggak harus nunggu semuanya beres dulu buat cerita.</p>
+          <p>Makasih udah jadi teman yang bisa diajak ngobrol dan bercanda. Semoga kita bisa terus saling dukung, tetap semangat walaupun lagi sibuk sama urusan masing-masing, dan punya banyak cerita baik ke depannya. Jaga diri baik-baik ya, Bung. Gua support lu.</p>
+          <p class="signature">— Respect</p>
+        </article>
+
+        <div class="shared-note">
+          <p class="eyebrow">FOR BOTH OF YOU</p>
+          <p>Buat kalian semua, makasih udah jadi teman terbaik dalam hidup gua. Gua bersyukur bisa kenal dan punya kalian di hidup gua. Semoga hal-hal baik selalu ada di sisi kalian, semoga kalian selalu sehat dan bahagia, dan kalo suatu saat ada apa-apa, jangan ragu buat cerita atau minta bantuan. Semoga kita tetap bisa saling dukung dan ketawa bareng, sesibuk apa pun kita nanti. Appreciate you both.💙🩷</p>
+        </div>
+        <button class="primary-button" data-go="finale" type="button">One last thing <span>♡</span></button>
+      </div>
+    </section>
+
+    <section class="screen finale section-hidden" id="finale">
+      <div class="finale-card">
+        <p class="eyebrow">END OF THIS LITTLE SURPRISE</p>
+        <div class="finale-heart">♡</div>
+        <h2>Keep this little reminder.</h2>
+        <p>Semoga tahun ini membawa lebih banyak alasan buat tersenyum, orang-orang baik, dan kenangan yang bakal selalu menyenangkan buat diingat.</p>
+        <p class="finale-name">With love, Manusia, Hassa &amp; Bunga 💙🩷</p>
+        <button class="text-button" id="backToTop" type="button">Back to the beginning ↑</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>made with care ♡ for Talitha</footer>
+  <script src="script.js"></script>
+</body>
+</html>
